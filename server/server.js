@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false })); //this will parse url encoded 
 
 app.use(express.json()); //call the function so that it parses any json data that we may receieve from req.body in the routes
 
-app.get("/", (req, res, next) => {
+app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
