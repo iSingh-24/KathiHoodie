@@ -33,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./client/template.html",
+      template: "./client/template.html", //this will look for the template on the frontend that we're going to show
     }),
     new CleanWebpackPlugin(),
   ],
